@@ -29,17 +29,37 @@
   left: 0
   width: 100%
   height: 100%
-
   background: linear-gradient(45deg, #0e6377 45px, transparent 45px)64px 64px, linear-gradient(45deg, #0e6377 45px, transparent 45px,transparent 91px, #0c596b 91px, #0c596b 135px, transparent 135px), linear-gradient(-45deg, #0e6377 23px, transparent 23px, transparent 68px,#0e6377 68px,#0e6377 113px,transparent 113px,transparent 158px,#0e6377 158px);
   background-color:#0c596b;
   background-size: 128px 128px;
   z-index: -1
 
+#avatar-wrap
+  line-height: 0;   /* remove line-height */ 
+  display: inline-block;  /* circle wraps image */
+  margin: 5px;
+  border: 2px solid rgba(255,255,255,0.4);
+  border-radius: 50%; /* relative value */
+  /*box-shadow: 0px 0px 5px rgba(0,0,0,0.4);*/
+  transition: linear 0.25s;
+  height: 120px;
+  width: 120px;
+  
+#avatar-wrap img
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+#avatar-wrap:hover
+  transition: ease-out 0.2s;
+  border: 2px solid rgba(255,255,255,0.8);
+  -webkit-transition: ease-out 0.2s;
+
 #header-title
   text-align: center
   height: logo-size
   position: absolute
-  top: 50%
+  top: 18%
   left: 0
   margin-top: logo-size * -0.5
 
